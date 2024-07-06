@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="ty.css">
+    <style>
+        /* @font-face { */
+            /* font-family: 'OliveObliqueRegular'; */
+            /* src: url('path/to/OliveObliqueRegular.ttf') format('truetype'); Replace 'path/to/' with the actual path to your font file */
+        /* } */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            background-color: #000;
+            color: #ffffff;
+            font-family: 'OliveObliqueRegular';
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .spline {
+            width: 100%;
+            max-width: 800px;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .spline iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        .thankyou {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            font-family: 'OliverOblique';
+            font-style: italic;
+            white-space: nowrap;
+            /* white-space: nowrap; */
+        }
+        .message {
+            font-size: 3.2em;
+            white-space: nowrap;
+            font-family: 'OliverOblique';
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            .spline {
+                height: 40vh;
+            }
+            .thankyou {
+                font-size: 1em;
+            }
+            .message {
+                font-size: 1.2em;
+            }
+        }
+        @media (max-width: 480px) {
+            .spline {
+                height: 30vh;
+            }
+            .thankyou {
+                font-size: 0.9em;
+            }
+            .message {
+                font-size: 1em;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1100px){
+            .spline {
+                height: 40vh;
+            }
+            .thankyou {
+                font-size: 3vw;
+            }
+            .message {
+                font-size: 2.3vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="spline">
+            <iframe src="https://my.spline.design/regnummask-b195a39a9b50037ff7d2ccb3d27a659b/" allowfullscreen></iframe>
+        </div>
+        <div class="thankyou">
+            Thank you for your interest
+        </div>
+        <div class="message">
+            We will get back on your registration soon
+        </div>
+    </div>
+</body>
+</html>
